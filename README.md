@@ -1,14 +1,18 @@
 # dbt-bigquery-cost-optimization
 
-A dbt adapter derived from `dbt-bigquery`. Install it next to `dbt-core` and set the profile target type to `bigquery_cost_optimization`.
+A dbt adapter derived from `dbt-bigquery`. Install it from a local checkout in the environment that runs dbt, then set the profile target type to `bigquery_cost_optimization`.
 
 If the node has a tag listed in `execution_projects_by_tag`, the job runs in that GCP project. The destination project in the compiled SQL does not change.
 
 ## Install
 
+This package is not published. From this directory, install it into the Python environment that runs dbt:
+
 ```bash
-pip install dbt-bigquery-cost-optimization
+pip install .
 ```
+
+`dbt-bigquery` is installed with it. dbt imports `dbt.adapters.bigquery_cost_optimization` from that environment.
 
 ## Profile
 
