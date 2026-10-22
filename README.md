@@ -1,0 +1,1 @@
+# dbt-adapter-bigquery-project-selector
