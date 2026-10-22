@@ -1,0 +1,5 @@
+config-version: 2
+name: dbt_bigquery_cost_optimization
+version: 1.0
+
+macro-paths: ["macros"]
